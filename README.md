@@ -4,6 +4,8 @@ A project demonstrating skills acquired from [Team
 Treehouse](http://referrals.trhou.se/lindseykdeveloper) on the Front End Web
 Development Techdegree track.
 
+> Live link can be found [here](https://myjsphotogallery.netlify.app/)
+
 In this project, you will create an interactive photo gallery using JavaScript and CSS Grid Layout. Thumbnails and photos will be provided with descriptions. At the top of the page, you'll have a search area where photos will hide and show depending on user input. When the user clicks on a thumbnail, the photo will display in a lightbox. There should be "back" and "previous" arrows to cycle through photos.
 
 Included:
