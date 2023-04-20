@@ -1,129 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <caption>Photo Gallery</caption>
+  <title>Photo Gallery</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/lightbox.css">
   <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
-
 </head>
-
 <body>
   <main>
     <div class="heading">
       <h1 class="title">Interactive Photo Gallery</h1>
       <div class="search-box">
         <input type="search" id="search" placeholder="Search...">
-        <div>
-        </div>
-        <div class="gallery-container gallery" id="photos">
-
-          <section>
-            <a href="photos/01.jpg" data-lightbox="gallery"
-              data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields."
-              data-alt="Hay Bales">
-              <img src="photos/thumbnails/01.jpg" alt="Hay Bales.">
-            </a>
-
-
-            <a href="photos/02.jpg" data-lightbox="gallery"
-              data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here."
-              data-alt="Lake">
-              <img src="photos/thumbnails/02.jpg" alt="Lake">
-            </a>
-
-
-            <a href="photos/03.jpg" data-lightbox="gallery"
-              data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below."
-              data-alt="Canyon">
-              <img src="photos/thumbnails/03.jpg" alt="Canyon">
-            </a>
-
-
-            <a href="photos/04.jpg" data-lightbox="gallery"
-              data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."
-              data-alt="Iceberg">
-              <img src="photos/thumbnails/04.jpg" alt="Iceberg">
-            </a>
-
-
-            <a href="photos/05.jpg" data-lightbox="gallery"
-              data-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."
-              data-alt="Desert">
-              <img src="photos/thumbnails/05.jpg" alt="Desert">
-            </a>
-
-
-            <a href="photos/06.jpg" data-lightbox="gallery"
-              data-caption="Fall is coming, I love when the leaves on the trees start to change color." data-alt="Fall">
-              <img src="photos/thumbnails/06.jpg" alt="Fall">
-            </a>
-
-
-            <a href="photos/07.jpg" data-lightbox="gallery"
-              data-caption="I drove past this plantation yesterday, everything is so green!" data-alt="Plantation">
-              <img src="photos/thumbnails/07.jpg" alt="Plantation">
-            </a>
-
-            <a href="photos/08.jpg" data-lightbox="gallery"
-              data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!" data-alt="Dunes">
-              <img src="photos/thumbnails/08.jpg" alt="Dunes">
-            </a>
-
-
-            <a href="photos/09.jpg" data-lightbox="gallery"
-              data-caption="We enjoyed a quiet stroll down this countryside lane." data-alt="Countryside Lane">
-              <img src="photos/thumbnails/09.jpg" at="Countryside Lane">
-            </a>
-
-
-            <a href="photos/10.jpg" data-lightbox="gallery"
-              data-caption="Sunset at the coast! The sky turned a lovely shade of orange." data-alt="Sunset">
-              <img src="photos/thumbnails/10.jpg" alt="Sunset">
-            </a>
-
-
-            <a href="photos/11.jpg" data-lightbox="gallery"
-              data-caption="I did a tour of a cave today and the view of the landscape below was breathtaking."
-              data-alt="Cave">
-              <img src="photos/thumbnails/11.jpg" alt="Cave">
-            </a>
-
-
-            <a href="photos/12.jpg" data-lightbox="gallery"
-              data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."
-              data-alt="Bluebells">
-              <img src="photos/thumbnails/12.jpg" alt="Bluebells">
-            </a>
-
-        </div>
-
-        </section>
       </div>
+    </div>
+    <div class="gallery-container gallery" id="photos">
+      <ul id="container">
+        <li> <a href="photos/01.jpg"
+            data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields."
+            data-alt="Hay Bales">
+            <img src="photos/thumbnails/01.jpg" alt="Hay Bales." class="gallery__item">
+          </a>
+        </li>
+        <li><a href="photos/02.jpg"
+            data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here."
+            data-alt="Lake">
+            <img src="photos/thumbnails/02.jpg" alt="Lake" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="photos/03.jpg"
+            data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below."
+            data-alt="Canyon">
+            <img src="photos/thumbnails/03.jpg" alt="Canyon" class="gallery__item">
+          </a>
+        </li>
+        <li><a href="photos/04.jpg"
+            data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."
+            data-alt="Iceberg">
+            <img src="photos/thumbnails/04.jpg" alt="Iceberg" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="photos/05.jpg"
+            data-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."
+            data-alt="Desert">
+            <img src="photos/thumbnails/05.jpg" alt="Desert" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="photos/06.jpg"
+            data-caption="Fall is coming, I love when the leaves on the trees start to change color." data-alt="Fall">
+            <img src="photos/thumbnails/06.jpg" alt="Fall" class="gallery__item">
+          </a>
+        </li>
+        <li><a href="photos/07.jpg" data-caption="I drove past this plantation yesterday, everything is so green!"
+            data-alt="Plantation">
+            <img src="photos/thumbnails/07.jpg" alt="Plantation" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="photos/08.jpg" data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!"
+            data-alt="Dunes">
+            <img src="photos/thumbnails/08.jpg" alt="Dunes" class="gallery__item">
+          </a>
+        </li>
+        <li><a href="photos/09.jpg" data-caption="We enjoyed a quiet stroll down this countryside lane."
+            data-alt="Countryside Lane">
+            <img src="photos/thumbnails/09.jpg" alt="Countryside Lane" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="photos/10.jpg" data-caption="Sunset at the coast! The sky turned a lovely shade of orange."
+            data-alt="Sunset">
+            <img src="photos/thumbnails/10.jpg" alt="Sunset" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="photos/11.jpg"
+            data-caption="I did a tour of a cave today and the view of the landscape below was breathtaking."
+            data-alt="Cave">
+            <img src="photos/thumbnails/11.jpg" alt="Cave" class="gallery__item">
+          </a>
+        </li>
+        <li> <a href="photos/12.jpg"
+            data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."
+            data-alt="Bluebells">
+            <img src="photos/thumbnails/12.jpg" alt="Bluebells" class="gallery__item">
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
   </main>
   <script>
-    baguetteBox.run(".gallery", {
-      captions: true,
-      buttons: true,
-      animation: 'slideIn'
+    window.addEventListener('load', function () {
+      baguetteBox.run(".gallery", {
+        captions: true,
+        buttons: 'auto',
+        fullScreen: false,
+        noScrollbars: false,
+        titleTag: true,
+        async: false,
+        preload: 2,
+        animation: 'fadeIn',
+        onChange: null
+      });
     });
   </script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"
-    integrity="sha256-gbqsBwBVZ0bNBUY4I5rT6yRhMbB9roODov0c8qE4iNE=" crossorigin="anonymous"></script>
-  <script src="assets/js/lightbox.js"></script>
   <script src="assets/js/baguetteBox.min.js" async></script>
   <!-- <script src="assets/js/searchFilter.js"></script> -->
   <script src="assets/js/app.js"></script>
-
 </body>
-
 </html>
